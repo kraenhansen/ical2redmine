@@ -6,6 +6,7 @@ This tool will create, update and delete time entries on your redmine installati
 
 How to install:
  1. You don't, basically you have to build the pyactiveresource dependency by first navigating into the folder:
+
     cd pyactiveresource
 
 and then building the library, running:

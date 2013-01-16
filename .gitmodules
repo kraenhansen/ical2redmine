@@ -1,0 +1,3 @@
+[submodule "pyactiveresource"]
+	path = pyactiveresource
+	url = git://github.com/kraenhansen/pyactiveresource.git

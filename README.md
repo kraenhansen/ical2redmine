@@ -7,6 +7,7 @@ This tool will create, update and delete time entries on your redmine installati
 How to install:
  1. You don't, basically you have to build the pyactiveresource dependency by first navigating into the folder: ```cd pyactiveresource``` and then building the library, running: ```python setup.py build```
  2. Now copy the settings.example.json file to some other file like settings.json and start filling in the blank ___'s. Please consult the example file and source-code for details on the values of the parameters.
+ 3. Now run the tool by running the simple sync.sh script: ```./sync.sh``` which basically inserts the newly build dependency library in the PYTHONPATH and calls the ical2redmine.py script with settings.json as the configuration settings file.
 
 It has only been tested with Redmine 1.4.6 but I would expect it to work from Redmine 1.4.4 (as it depends the http://www.redmine.org/issues/11112 bugfix).
 

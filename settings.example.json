@@ -1,25 +1,12 @@
 {
-	"ical_url": "___.ics",
-	"redmine_url":				"http://___",
-	"redmine_api_key":			"___",
-	"update_existing_entries":	true,
-	"custom_field_id":			6,
-	"mappings": [
-		{
-			"vevent_summary_pattern": ".*@ DR",
-			"vevent_description_pattern": "",
-			"vevent_location_pattern": "",
-			"user": 5,
-			"issue": 149,
-			"activity": 9,
-			"prepend_comments": " [ical]"
-		},
-		{
-			"vevent_summary_pattern": ".*@ KB",
-			"user": "Kræn Hansen",
-			"issue": 155,
-			"user": 5,
-			"activity": 10
-		}
+	"redmine_url":					"http://___",
+	"pattern":						".*\\[#(?P<issue_id>\\d+)\\]",
+	"update_existing_entries":		true,
+	"custom_time_entry_field_id":	_,
+	"custom_user_field_id":			_,
+	"since":					"mm/dd/yyyy",
+	"subscriptions": [
+		{"user_id": _, "api_key": "6c....................................85"},
+		{"user_id": _, "api_key": "9d....................................35"}
 	]
 }

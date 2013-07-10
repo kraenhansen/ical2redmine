@@ -8,7 +8,7 @@ How to install:
  0. Fetch the pyactiveresource dependency submodule by navigating into your newly cloned ical2redmine directory and run ```git submodule init``` followed by ```git submodule update```
  1. You don't, basically you have to build the pyactiveresource dependency by first navigating into the folder: ```cd pyactiveresource``` and then building the library, running: ```python setup.py build```
  2. Now copy the settings.example.json file to some other file like settings.json and start filling in the blank ___'s. Please consult the example file and source-code for details on the values of the parameters.
- 3. Now run the tool by running the simple sync.sh script: ```./sync.sh``` which basically inserts the newly build dependency library in the PYTHONPATH and calls the ical2redmine.py script with settings.json as the configuration settings file.
+ 3. Now run the tool by executing the following command: ```python ical2redmine.py --settings settings.json```.
 
 It has only been tested with Redmine 1.4.6 but I would expect it to work from Redmine 1.4.4 (as it depends the http://www.redmine.org/issues/11112 bugfix).
 

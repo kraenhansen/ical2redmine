@@ -21,9 +21,7 @@ How to install:
   * __custom_time_entry_field id__: The _id_ of the field created in 4.3
   * __custom_user_field id__: The _user_ of the field created in 4.4
   * __since__: A mm/dd/yyyy formatted lower bound on the iCal events to consider when reading the iCal feed and when considering Redmine time entries for update or deletion.
-  * __subscriptions__: A list of objects (one pr. user that the tool should handle) with two fields,
-    * __user_id__: The ID of the user: This is visible from the URL when clicking a users name on the _/users_ Redmine page.
-    * __api_key__: The API key of that particular user. This is visible on the _My account_ (link in the top-right corner) page, when clicking the _Show_ link below _API access key_ on the light hand side.
+  * __subscriptions__: A list of objects (one pr. user that the tool should handle) with two fields: __user_id__: The ID of the user: This is visible from the URL when clicking a users name on the _/users_ Redmine page. __api_key__: The API key of that particular user. This is visible on the _My account_ (link in the top-right corner) page, when clicking the _Show_ link below _API access key_ on the light hand side.
  6. The final step is to add the URL of the iCal feed to your users account: Again on the _My account_ page add the URL in the newly created _iCal Time Entry URL_ custom field. If you are importing from Google Calendar, follow [this guide](https://support.google.com/calendar/answer/37111?hl=en&ref_topic=1672003) to obtain your private iCal URL. Instead of downloading the .ical file, copy the link. Please note that sharing this link on the Redmine installation will enable administrators to see and change your calendar, so consider using a seperate calendar for this.
  7. Now create events in the calendar, whereever you would like to report time entries. Using the standard pattern provided in the example settings file, the summary(/title) should contain _(#n)_ where _n_ is an integer referring to an issue id, on which to report time.
  8. Now run the tool by executing the following command: ```python ical2redmine.py --settings settings.json```.

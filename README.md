@@ -34,6 +34,8 @@ It has only been tested with Redmine 1.4.6 but I would expect it to work from Re
 The process that the processor goes through:
  1. Fetch the ical feed of events.
  2. Fetch all time entries in the Redmine service.
- 3. Loop through all entries that have been created by the ical2redmine tool to check them for changes in the commens, spent_on and hours fields. Update them with the newest information from the ical feed. If the event was deleted from the ical feed, the time entry will be as well.
- 4. Loop through all remaining events from the ical feed, and create time entries for any event in the past.
+ 3. Loop through all iCal events from the ical feed:
+   * Create time entries for any event in the past (lower bounded by the value of _since_) which does not already have a time entry.
+   * If the _update_existing_entries_ flag is set in the settings: Update or delete any time entry, created by the tool, which is related to a particular iCal event.
+ 4. If the _update_existing_entries_ flag is set in the settings: Loop through all entries that has been created by the ical2redmine tool to check if they have been passed in the processing of iCal events, if not; They need to be deleted.
 

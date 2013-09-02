@@ -6,7 +6,7 @@ This tool will create, update and delete time entries on your redmine installati
 
 How to install:
  1. Clone the Github repo onto your local machine or server, running ```git clone https://github.com/kraenhansen/ical2redmine.git``` on a unix/linux machine.
- 2. Fetch the pyactiveresource dependency submodule by navigating into your newly cloned ical2redmine directory and run ```git submodule init``` followed by ```git submodule update```
+ 2. Fetch the pyactiveresource dependency submodule by navigating into your newly cloned ical2redmine directory and run ```git submodule update --init```
  3. You have to build the pyactiveresource dependency by first navigating into the folder: ```cd pyactiveresource``` and then building the library, running: ```python setup.py build```, navigate back to the ical2redmine directory.
  4. You have to create two custom variables on your Redmine installation.
   * Login to your redmine installation, using an administrative account.

@@ -4,6 +4,10 @@ ical2redmine
 A tool to keep your redmine time entries updated directly from an ical exportable calendar.
 This tool will create, update and delete time entries on your redmine installation based on ical events from a feed of ical events (such as Google Calendar).
 
+Installing dependencies:
+ 1. Python interpreter
+ 2. icalendar python module (running ```sudo easy_install icalendar``` after ```sudo apt-get install python-setuptools``` - if the easy_install tool is not installed)
+
 How to install:
  1. Clone the Github repo onto your local machine or server, running ```git clone https://github.com/kraenhansen/ical2redmine.git``` on a unix/linux machine.
  2. Fetch the pyactiveresource dependency submodule by navigating into your newly cloned ical2redmine directory and run ```git submodule update --init```
